@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/story_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:layout_gravity="center"
+    card_view:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:layout_gravity="start">
+        <ImageView
+            android:id="@+id/img_story"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/people_story" />
+        <TextView
+            android:id="@+id/tv_title_story"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="username"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_story_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="description"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/tv_story_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?android:textColorPrimaryDisableOnly"
+            android:textSize="14sp"
+            tools:text="@tools:sample/date/ddmmyy" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
